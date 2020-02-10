@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Exuberance 2020
+        </title>
+        <style type="text/css">
+            body {
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body onresize="resizer();">
+        <iframe id="box" src="https://docs.google.com/forms/d/e/1FAIpQLSeaFCgwJp2Za044Cqqi98xDbp3e4HhgXjwhsDvXp3h_dEDAew/viewform?embedded=true" width="100%" onload="this.height=0.9*screen.height;" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </body>
+    <script>
+        iframe.onload = function(){
+            iframe.style.height = document.height + 'px';
+        }
+        function resizer(e){
+            h = document.documentElement.clientHeight
+            document.getElementById('box').style.height = h + 'px';
+        }
+    </script>
+</html>
