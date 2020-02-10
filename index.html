@@ -16,10 +16,10 @@
     </body>
     <script>
         iframe.onload = function(){
-            iframe.style.height = document.documentElement.clientHeight - 100 + 'px';
+            iframe.style.height = parseInt(0.9 * document.documentElement.clientHeight) + 'px';
         }
         function resizer(e){
-            h = document.documentElement.clientHeight - 100
+            h = parseInt(0.9 * document.documentElement.clientHeight)
             document.getElementById('box').style.height = h + 'px';
         }
     </script>
