@@ -12,10 +12,10 @@
         </style>
     </head>
     <body onresize="resizer();">
-        <iframe id="box" src="https://docs.google.com/forms/d/e/1FAIpQLSeaFCgwJp2Za044Cqqi98xDbp3e4HhgXjwhsDvXp3h_dEDAew/viewform?embedded=true" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe id="box" onload="onloadFunction()" src="https://docs.google.com/forms/d/e/1FAIpQLSeaFCgwJp2Za044Cqqi98xDbp3e4HhgXjwhsDvXp3h_dEDAew/viewform?embedded=true" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </body>
     <script>
-        iframe.onload = function(){
+        onloadFunction = function(){
             iframe.style.height = Math.round(0.9*screen.height) + 'px';
         }
         function resizer(e){
